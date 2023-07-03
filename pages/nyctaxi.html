@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>THEODORE IKENNA UGWU PORTFOLIO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body id="rappy" class="is-preload">
+
+        <div id="main">
+
+            <h1>Data Analysis Report: Analysis of Taxi Trips in New York City</h1>
+
+            <h2>Introduction</h2>
+            <p>This report presents the findings of a data analysis project focused on taxi trips in New York City between 2017 and 2020. The dataset used for this analysis was acquired from Quantum Analytics' Google Drive and consists of six tables in CSV format.</p>
+        
+            <h2>Goal</h2>
+            <p>The primary objective of this project was to conduct a descriptive analysis of the dataset to identify trends and gain insights for informed decision-making. The analysis aimed to simulate the role of a data analyst within the New York City Taxi &amp; Limousine Commission. The visualizations and insights were presented on a Power BI dashboard.</p>
+        
+            <h2>Methodology</h2>
+            <p>Upon uploading the tables, data cleaning and preparation were performed. The process involved joining the tables using appropriate join methods, followed by the removal of trips sent via "store and forward," trips before 2017 and after 2020. Additionally, trips that were not "street hailed" and paid by "cash or card" with a standard rate were filtered out.</p>
+            <p>Further cleaning steps included assuming one passenger for trips with no recorded passengers and addressing any inconsistencies in pickup and dropoff date/time. After the data preparation phase, the dataset was processed and analyzed. The insights obtained were then visualized using a combination of charts, graphs, and cards on the Power BI dashboard.</p>
+            <div id="powerBIDashboard" style="width: 800px; height: 600px;">
+                <iframe title="Covid_Airport" width="1024" height="580" src="https://app.powerbi.com/view?r=eyJrIjoiOWZkNDMzZmMtODEzMC00Y2NkLTk0MmQtYzgxNWViMWNiZmZkIiwidCI6IjFhZDdjNjUyLTYxOWItNGQ0MS1hYmNhLTFiODQ4YTU0NWVlMiJ9" frameborder="0" allowFullScreen="true" frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+            
+            <h2>Key Insights</h2>
+            <ul>
+                <li><strong>Metrics:</strong> The analysis involved approximately 26 million trips, generating a total revenue of around 384 million dollars. The average fare amount per trip was $12, and the average distance traveled per trip was approximately 3 kilometers.</li>
+                <li><strong>Hourly Trends:</strong> The number of trips exhibits a gradual decline from 12 am to 6 am, reaching its lowest point. It then rises steadily to around 400 trips by 9 am, plateaus for about 5 hours, rises again, and peaks at around 600 trips at 7 pm before gradually declining to its lowest point at 6 am.</li>
+                <li><strong>Daily Trends:</strong> Saturdays experience the highest trip traffic, with approximately 4 million trips. There is a gradual increase in trip volume from Mondays to Saturdays, followed by a decline leading up to Mondays.</li>
+                <li><strong>Monthly Trends:</strong> The months of February and March observe the highest number of trips. There is a gradual decline in trip volume with occasional increases in June, September, and December. August exhibits the least traffic among the months.Also, in 2020 there was a significant drop in traffic and performance due to the Covid 19 pandemic</li>
+                <li><strong>Top Performers:</strong> The top five pickup zones, in descending order, are East Harlem North, East Harlem South, Central Harlem, Astoria, and Elmhurst. The top five dropoff zones, in descending order, are East Harlem North, Central Harlem North, Central Harlem, Astoria, and Jackson Heights.</li>
+            </ul>
+        
+            <h2>Recommendations</h2>
+            <ul>
+                <li>Lower taxi fares or offer vacation bonuses for tourists during July and August to attract more passengers.</li>
+                <li>Consider implementing slight fare reductions during weekdays to encourage more passengers to utilize taxis for their daily commutes to work or school.</li>
+                <li>Enhance driver training programs to improve customer service and ensure a positive experience for passengers. This could include providing customer service workshops, cultural sensitivity training, and effective communication skills training.</li>
+                <li>Implement a dynamic pricing strategy that adjusts fares based on demand and traffic conditions. This can help optimize revenue and incentivize drivers to be available during peak demand periods, improving service availability for customers.</li>
+                <li>Leverage technology advancements to streamline the taxi booking and payment process. Implementing a user-friendly mobile app or web platform that allows for easy booking, real-time tracking, and secure digital payments can enhance the overall customer experience and attract more passengers.</li>
+                <li>Continuously monitor and analyze customer feedback to identify areas for improvement and address any issues promptly. Regularly updating and refining the taxi service based on customer insights can contribute to customer satisfaction and loyalty.</li>
+                <li>Collaborate with local authorities and transportation planning agencies to optimize taxi service routes and distribution, considering factors such as population density, traffic patterns, and popular destinations.</li>
+            </ul>
+        
+    </div>
+					
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
