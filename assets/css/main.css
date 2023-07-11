@@ -25,6 +25,8 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+	
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -104,7 +106,7 @@ input, select, textarea {
 	}
 
 	#rappy {
-		background: linear-gradient(to bottom, #74c2f0,#045786,#1e252d);
+		background: linear-gradient(to bottom, #74c2f0,#539ac4,#4d1010);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -3771,8 +3773,8 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
-			border-top: solid 2px #eeeeee;
+			padding: 2rem 2rem 1rem 2rem ;
+			
 			margin: 0;
 		}
 
@@ -4693,3 +4695,53 @@ input, select, textarea {
 		}
 
 	}
+
+	.responsive-img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.pbdash {
+		display: flex;
+		box-sizing: border-box;
+		gap: o.4;
+		min-width: 0px;
+		min-height: 0px;
+		flex-direction: column;
+	}
+
+	.iframe-container {
+		position: relative;
+	;
+		
+	}
+
+	.iframe-container > iframe {
+		
+		position: relative;
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		
+	}
+
+	.iframe-container > iframe{
+		height: 280px;
+	
+	}
+
+	@media screen and (min-width:768px) {
+		
+		.iframe-container > iframe{
+			height: 350px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+		
+	.iframe-container > iframe{
+		height: 580px;
+}
+}
+
+	
