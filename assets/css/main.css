@@ -4744,4 +4744,19 @@ input, select, textarea {
 }
 }
 
+
+.logoa {
+    background-color: #8aebeb; /* Light grey background */
+    color: #051970; /* Dark grey text */
+    font-family: 'Arial', sans-serif; /* Sans-serif font */
+    font-size: 16px; /* Adjust font size as needed */
+    padding: 10px; /* Padding around the text */
+    margin: 10px; /* Margin to wrap the text */
+    border-radius: 8px; /* Rounded edges */
+    text-align: center; /* Center the text */
+	font-weight: bold;
+   /* display: inline-block; /* Ensure the margin wraps around the text */
+}
+
+
 	
