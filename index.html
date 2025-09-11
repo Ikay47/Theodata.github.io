@@ -1,415 +1,981 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>THEODORE IKENNA UGWU PORTFOLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!-- Custom CSS - Load after main.css -->
-		<link rel="stylesheet" href="assets/css/custom.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dr. Ikenna Theodore Ugwu - Healthcare Data Scientist</title>
+      
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css" />
+      
+        <!-- Scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script src="js/main.js" defer></script>
+      </head>
+<body>
+    <!-- Background Pattern -->
+    <div class="background-pattern">
+        <svg viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="line-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#00d4ff" stop-opacity="0" />
+                    <stop offset="50%" stop-color="#00d4ff" stop-opacity="0.6" />
+                    <stop offset="100%" stop-color="#00d4ff" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+            
+            <!-- Diagonal lines -->
+            <line x1="0" y1="100" x2="400" y2="0" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="200" y1="200" x2="600" y2="50" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="500" y1="300" x2="900" y2="100" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="800" y1="400" x2="1200" y2="200" stroke="url(#line-gradient)" stroke-width="1" />
+            
+            <!-- Horizontal lines -->
+            <line x1="100" y1="150" x2="500" y2="150" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="300" y1="350" x2="700" y2="350" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="600" y1="550" x2="1000" y2="550" stroke="url(#line-gradient)" stroke-width="1" />
+            
+            <!-- Vertical lines -->
+            <line x1="150" y1="0" x2="150" y2="300" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="450" y1="100" x2="450" y2="400" stroke="url(#line-gradient)" stroke-width="1" />
+            <line x1="750" y1="200" x2="750" y2="500" stroke="url(#line-gradient)" stroke-width="1" />
+            
+            <!-- Corner elements -->
+            <polygon points="0,0 100,0 0,100" fill="#00d4ff" fill-opacity="0.1" />
+            <polygon points="1200,0 1100,0 1200,100" fill="#00d4ff" fill-opacity="0.1" />
+        </svg>
+        
+        <div class="glowing-orb orb-1"></div>
+        <div class="glowing-orb orb-2"></div>
+        <div class="glowing-orb orb-3"></div>
+    </div>
 
-		<!-- Google Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&family=Orbitron:wght@700&display=swap" rel="stylesheet">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="container flex items-center justify-between">
+                <div class="nav-brand">
+                    Dr. Ikenna Theodore Ugwu
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
 
-		<!-- AOS (Animate On Scroll) CSS -->
-		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span id="menuIcon">☰</span>
+                </button>
+            </div>
 
-	</head>
-	<body class="is-preload">
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+        </nav>
+    </header>
 
-		<!-- Custom Cursor Elements -->
-		<div class="custom-cursor-dot"></div>
-		<div class="custom-cursor-outline"></div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="profile-container">
+                    <img
+                        src="images/profile portfolio.jpg"
+                        alt="Dr. Ikenna Theodore Ugwu"
+                        class="profile-image"
+                    />
+                    <div class="profile-border"></div>
+                </div>
+                
+                <h1 class="hero-title">
+                    Hi, I'm <span class="text-primary">Dr. Ikenna Theodore Ugwu</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Healthcare Data Scientist & ML Engineer specializing in predictive analytics, 
+                    machine learning, and turning complex data into actionable business insights.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+                    <a href="#" class="btn btn-outline btn-lg">View CV</a>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/Ikay47" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ikenna-ugwu-716b9b18b/" target="_blank" rel="noopener noreferrer">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="mailto:drikennaugwu@gmail.com">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 12.713l11.985-9.713h-23.97l11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="arrow-down">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 21l-12-18h24z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+    <!-- About Section -->
+    <section id="about" class="section section-alt">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="text-center mb-16 text-foreground">About Me</h2>
+                
+                <div class="grid-2" style="align-items: center; margin-bottom: 4rem;">
+                    <div>
+                        <p class="mb-6 text-foreground">
+                            I'm a passionate public health doctor and data scientist with extensive experience driving 
+                            data-informed health interventions in Nigeria. Over the past 5+ years, I've supported U.S. CDC-funded HIV programs,
+                            using advanced analytics, dashboards, and digital tools to improve patient outcomes and strengthen program performance.
+                        </p>
+                        <p class="mb-6 text-foreground">
+                            I specialize in data analysis, visualization, and machine learning, with hands-on expertise in Python, R, SQL, Power BI, 
+                            and Tableau. My work spans developing predictive models, automating reporting systems, and mentoring healthcare teams on 
+                            data-driven decision-making.
+                        </p>
+                        <p class="text-foreground">
+                            When I'm not optimizing health systems with data, you can find me building innovative digital solutions, 
+                            teaching aspiring analysts, or exploring new frontiers in AI and public health informatics.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="card">
+                            <div class="flex items-center p-6">
+                                <div style="margin-right: 1rem; padding: 0.75rem; background: rgba(0, 212, 255, 0.1); border-radius: var(--radius);">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                        <circle cx="12" cy="8" r="7"/>
+                                        <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 1.5rem; color: var(--primary);">5+</div>
+                                    <div class="text-muted-foreground">Years Experience</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="flex items-center p-6">
+                                <div style="margin-right: 1rem; padding: 0.75rem; background: rgba(0, 212, 255, 0.1); border-radius: var(--radius);">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                        <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 1.5rem; color: var(--primary);">50+</div>
+                                    <div class="text-muted-foreground">Projects Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="flex items-center p-6">
+                                <div style="margin-right: 1rem; padding: 0.75rem; background: rgba(0, 212, 255, 0.1); border-radius: var(--radius);">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                        <circle cx="9" cy="7" r="4"/>
+                                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div style="font-weight: 600; font-size: 1.5rem; color: var(--primary);">15+</div>
+                                    <div class="text-muted-foreground">Teams Led</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Intro -->
-					<div id="intro">
-						<!-- particles.js container will be here -->
-						<div class="intro-content">
-							<h1><a href="https://www.linkedin.com/in/ikenna-ugwu-716b9b18b/">THEODORE IKENNA UGWU</a><br />
-							PORTFOLIO</h1>
-							<h3><p><span id="typed-output"></span></p></h3>
-							<ul class="actions">
-								<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-							</ul>
-						</div>
-					</div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div style="max-width: 72rem; margin: 0 auto;">
+                <h2 class="text-center mb-16 text-foreground">Skills & Expertise</h2>
+                
+                <div class="grid-3 mb-16">
+                    <!-- Programming Languages -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Programming Languages</h3>
+                        <div class="space-y-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">R</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Java</span>
+                                    <span class="skill-percentage">75%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percentage">70%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo" data-aos="fade-down" data-aos-delay="200">Theodore Projects</a>
-					</header>
+                    <!-- Machine Learning & AI -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Machine Learning & AI</h3>
+                        <div class="space-y-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Scikit-learn</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">TensorFlow</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PyTorch</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">XGBoost</span>
+                                    <span class="skill-percentage">92%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Deep Learning</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="88"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Projects</a></li>
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/ikenna-ugwu-716b9b18b/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">linkedin</span></a></li>
-						</ul>
-					</nav>
+                    <!-- Data Tools & Platforms -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Data Tools & Platforms</h3>
+                        <div class="space-y-4">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Pandas</span>
+                                    <span class="skill-percentage">95%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">NumPy</span>
+                                    <span class="skill-percentage">93%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="93"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Power BI</span>
+                                    <span class="skill-percentage">90%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Tableau</span>
+                                    <span class="skill-percentage">88%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percentage">85%</span>
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-width="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				<!-- Main -->
-					<div id="main">
+                <div class="grid-2">
+                    <!-- Certifications -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Certifications</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
+                                <span class="text-foreground">DataCamp Certification in Data Science</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
+                                <span class="text-foreground">Google Data Analytics Professional Certificate</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
+                                <span class="text-foreground">Bloomberg Certification in Financial Fundamentals</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
+                                <span class="text-foreground">Diploma in Project Management (Alison)</span>
+                            </div>
+                        </div>
+                    </div>
 
-						<!-- Featured Post (Kept commented as per original, but would be styled by custom.css if uncommented)
-							<article class="post featured" data-aos="fade-up">
-								<header class="major">
-									<h2><a href="https://github.com/DataThinkers/Data-Analytics-Projects-Code/blob/main/Data%20Analysis%20Warmup%20Exercises12.ipynb">DATA CLEANING IN SQL
-									</a></h2>
-									<p> In this project we clean data housing in SQL Server.</p>
-								</header>
-								<a href="https://github.com/DataThinkers/Data-Analytics-Projects-Code/blob/main/Data%20Analysis%20Warmup%20Exercises12.ipynb" class="image main"><img src="images/MS-SQL-Server-logo.webp" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/DataThinkers/Data-Analytics-Projects-Code/blob/main/Data%20Analysis%20Warmup%20Exercises12.ipynb" class="button large">View Project</a></li>
-								</ul>
-							</article>
-							 -->
+                    <!-- Tools & Technologies -->
+                    <div class="card">
+                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Tools & Technologies</h3>
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                            <span class="badge">Jupyter</span>
+                            <span class="badge">Git</span>
+                            <span class="badge">SPSS</span>
+                            <span class="badge">PyCharm</span>
+                            <span class="badge">Tableau</span>
+                            <span class="badge">Power BI</span>
+                            <span class="badge">Android Studio</span>
+                            <span class="badge">PostgreSQL</span>
+                            <span class="badge">VS Code</span>
+                            <span class="badge">MLflow</span>
+                            <span class="badge">Apache Airflow</span>
+                            <span class="badge">Excel (Advanced)</span>
+                            <span class="badge">KoboToolbox</span>
+                            <span class="badge">ODK</span>
+                            <span class="badge">EMR Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-						<!-- Posts -->
-							<section class="posts">
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <div style="max-width: 84rem; margin: 0 auto;">
+                <h2 class="text-center mb-16">Featured Projects</h2>
+                
+                <div class="grid-3">
+                    <!-- Project 1 -->
+                    <div class="card" data-aos="fade-up">
+                        <img src="./images/stroke.jpeg" alt="Stroke Prediction" class="project-image" />
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">STROKE PREDICTION<br />(WEB APP)</h3>
+                        <div class="project-tags">
+                            <span class="badge">Machine learning</span>
+                            <span class="badge">Streamlit</span>
+                        </div>
+                        <a href="https://ikay47-stroke-prediction-app-app-ak8ng9.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">VIEW PROJECT</a>
+                    </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="https://app.powerbi.com/view?r=eyJrIjoiY2RmYjA5NTUtMzYyMi00YjhmLTliMzktYWJhMjZlODA5YjdlIiwidCI6IjFhZDdjNjUyLTYxOWItNGQ0MS1hYmNhLTFiODQ4YTU0NWVlMiJ9" target="_blank" rel="noopener noreferrer">HR ANALYSIS</a></h2>
-									</header>
-									<a href="https://app.powerbi.com/view?r=eyJrIjoiY2RmYjA5NTUtMzYyMi00YjhmLTliMzktYWJhMjZlODA5YjdlIiwidCI6IjFhZDdjNjUyLTYxOWItNGQ0MS1hYmNhLTFiODQ4YTU0NWVlMiJ9" target="_blank" rel="noopener noreferrer" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/HR.jpg" alt="HR Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Power BI</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="https://app.powerbi.com/view?r=eyJrIjoiY2RmYjA5NTUtMzYyMi00YjhmLTliMzktYWJhMjZlODA5YjdlIiwidCI6IjFhZDdjNjUyLTYxOWItNGQ0MS1hYmNhLTFiODQ4YTU0NWVlMiJ9" target="_blank" rel="noopener noreferrer" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <div class="card" data-aos="fade-up">
+                        <img src="./images/Cardiovascular_disease_3.png" alt="Cardiovascular Disease Prediction" class="project-image" />
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">PREDICTING CARDIOVASCULAR DISEASE</h3>
+                        <div class="project-tags">
+                            <span class="badge">Machine learning</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <a href="https://colab.research.google.com/drive/13VsnIDKQNr7xfpo0Ve65ccSdbOgRpn-z#scrollTo=KZxLJLT8nKF4" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">VIEW PROJECT</a>
+                    </div>
 
-                                <article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/covidair.html">COVID IMPACT ON<br />AIRPORT TRAFFIC</a></h2>
-									</header>
-									<a href="pages/covidair.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/covidair.jpg" alt="Covid Airport Traffic" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Power BI</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/covidair.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!-- Project 3 -->
+                    <div class="card">
+                        <img
+                            src="https://images.unsplash.com/photo-1618044733300-9472054094ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGFuYWx5dGljcyUyMHJlcG9ydHN8ZW58MXx8fHwxNzU3NDI1MjY2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+                            alt="Predicting Osteoporosis"
+                            class="project-image"
+                        />
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">PREDICTING OSTEOPOROSIS (BONE DEGENERATION)</h3>
+                        <div class="project-tags">
+                            <span class="badge">Machine learning</span>
+                            <span class="badge">Python</span>
+                        </div>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">
+                            VIEW PROJECT
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="pages/projects.html" class="btn btn-outline btn-lg">View All Projects</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="https://colab.research.google.com/drive/1eVBAUqCWPUc8EcnhJsmfGEpY5v88ZdM2#scrollTo=3ce63fcc" target="_blank" rel="noopener noreferrer">PREDICTING OSTEOPOROSIS<br />(BONE DEGENERATION)</a></h2>
-									</header>
-									<a href="https://colab.research.google.com/drive/1eVBAUqCWPUc8EcnhJsmfGEpY5v88ZdM2#scrollTo=3ce63fcc" target="_blank" rel="noopener noreferrer" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/osteoporosis.jpg" alt="Osteoporosis Prediction" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Machine learning, Python</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="https://colab.research.google.com/drive/1eVBAUqCWPUc8EcnhJsmfGEpY5v88ZdM2#scrollTo=3ce63fcc" target="_blank" rel="noopener noreferrer" class="button">View project</a></li>
-									</ul>
-								</article>
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div style="max-width: 64rem; margin: 0 auto;">
+                <h2 class="text-center mb-16 text-foreground">Experience & Education</h2>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="https://colab.research.google.com/drive/13VsnIDKQNr7xfpo0Ve65ccSdbOgRpn-z#scrollTo=KZxLJLT8nKF4" target="_blank" rel="noopener noreferrer">PREDICTING CARDIOVASCULAR DISEASE</a></h2>
-									</header>
-									<a href="https://colab.research.google.com/drive/13VsnIDKQNr7xfpo0Ve65ccSdbOgRpn-z#scrollTo=KZxLJLT8nKF4" target="_blank" rel="noopener noreferrer" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/Cardiovascular_disease_3.png" alt="Cardiovascular Disease Prediction" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Machine learning, Python</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="https://colab.research.google.com/drive/13VsnIDKQNr7xfpo0Ve65ccSdbOgRpn-z#scrollTo=KZxLJLT8nKF4" target="_blank" rel="noopener noreferrer" class="button">View project</a></li>
-									</ul>
-								</article>
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+                    
+                    <!-- Experience Item 1 -->
+                    
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/DVDrental.html">DVD RENTAL ANALYSIS</a></h2>
-									</header>
-									<a href="pages/DVDrental.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/DVD.jpg" alt="DVD Rental Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">PostgreSQL, SQL</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/DVDrental.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!-- Experience Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="card">
+                                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <h3 style="display: flex; align-items: center; gap: 0.5rem; color: var(--foreground); margin-bottom: 0.25rem;">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                                <line x1="12" y1="17" x2="12" y2="21"/>
+                                            </svg>
+                                            State Clinical Mentor / Health Data Analyst
+                                        </h3>
+                                        <div style="font-weight: 500; color: var(--primary);">
+                                            National Clinical Mentorship Programme (CDC-funded)
+                                        </div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="badge">📅 2022 - 2025</span>
+                                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Lagos, Nigeria</div>
+                                    </div>
+                                </div>
+                                
+                                <p style="margin-bottom: 1rem; color: var(--foreground);">
+                                    Provided mentorship to healthcare workers on HIV/TB service delivery and strengthened data use for decision-making across facilities.
+                                </p>
+                                
+                                <div>
+                                    <div style="font-weight: 500; color: var(--primary); margin-bottom: 0.5rem;">Key Achievements:</div>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Supported over 40 health facilities in Lagos State to improve HIV/TB outcomes.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Enhanced viral load suppression monitoring by integrating DHIS2 and EMR data.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Led facility-level data reviews that informed program adjustments and improved patient outcomes.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Education Item -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="card">
+                                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <h3 style="display: flex; align-items: center; gap: 0.5rem; color: var(--foreground); margin-bottom: 0.25rem;">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                            </svg>
+                                            Master of Public Health (In Progress)
+                                        </h3>
+                                        <div style="font-weight: 500; color: var(--primary);">
+                                            University of Port-Harcourt
+                                        </div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="badge">📅 Ongoing</span>
+                                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Port-Harcourt, Nigeria</div>
+                                    </div>
+                                </div>
+                                
+                                <p style="margin-bottom: 1rem; color: var(--foreground);">
+                                    Specializing in epidemiology, biostatistics, and health systems research.
+                                </p>
+                                
+                                <div>
+                                    <div style="font-weight: 500; color: var(--primary); margin-bottom: 0.5rem;">Key Achievements:</div>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Research focus on predictors of treatment discontinuation among HIV patients.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Applied advanced quantitative methods to public health data analysis.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/fights.html">US FLIGHTS ANALYSIS</a></h2>
-									</header>
-									<a href="pages/fights.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/Top-100-US-Airports-Ranking.jpg" alt="US Flights Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200"><span class="icon brands fa-r-project"></span> R, Tableau</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/fights.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!-- Experience Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="card">
+                                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <h3 style="display: flex; align-items: center; gap: 0.5rem; color: var(--foreground); margin-bottom: 0.25rem;">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                                <line x1="12" y1="17" x2="12" y2="21"/>
+                                            </svg>
+                                            Public Health Doctor & Data Analyst
+                                        </h3>
+                                        <div style="font-weight: 500; color: var(--primary);">
+                                            Centre of Integrated Health Partner (CIHP)
+                                        </div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="badge">📅 2021 - 2022</span>
+                                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Nigeria</div>
+                                    </div>
+                                </div>
+                                
+                                <p style="margin-bottom: 1rem; color: var(--foreground);">
+                                    Delivered consulting services in public health and data analytics with a focus on HIV programs, maternal and child health, and health system strengthening.
+                                </p>
+                                
+                                <div>
+                                    <div style="font-weight: 500; color: var(--primary); margin-bottom: 0.5rem;">Key Achievements:</div>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Designed Power BI dashboards for HIV program monitoring at state and facility levels.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Conducted advanced statistical analysis and predictive modeling for patient outcomes.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Trained healthcare professionals on data analysis, visualization, and interpretation.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/nyctaxi.html">NEW YORK CITY <br />TAXI ANALYSIS</a></h2>
-									</header>
-									<a href="pages/nyctaxi.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/taxi.jpg" alt="NYC Taxi Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Power BI</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/nyctaxi.html" class="button">View project</a></li>
-									</ul>
-								</article>
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/sharks.html">SHARK ATTACK <br />ANALYSIS</a></h2>
-									</header>
-									<a href="pages/sharks.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/great-white-shark1.jpg" alt="Shark Attack Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Power BI</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/sharks.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!--experience 1-->
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/stocks.html">STOCK PRICES <br />ANALYSIS</a></h2>
-									</header>
-									<a href="pages/stocks.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/stocks.jpg" alt="Stock Prices Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Power BI</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/stocks.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="card">
+                                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <h3 style="display: flex; align-items: center; gap: 0.5rem; color: var(--foreground); margin-bottom: 0.25rem;">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                                <line x1="8" y1="21" x2="16" y2="21"/>
+                                                <line x1="12" y1="17" x2="12" y2="21"/>
+                                            </svg>
+                                            Medical Officer
+                                        </h3>
+                                        <div style="font-weight: 500; color: var(--primary);">
+                                            Clinical Practice
+                                        </div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="badge">📅 2017 - 2020</span>
+                                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Nigeria</div>
+                                    </div>
+                                </div>
+                                
+                                <p style="margin-bottom: 1rem; color: var(--foreground);">
+                                    Provided direct patient care in internal medicine, pediatrics, and public health programs while supporting facility-level health reporting.
+                                </p>
+                                
+                                <div>
+                                    <div style="font-weight: 500; color: var(--primary); margin-bottom: 0.5rem;">Key Achievements:</div>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Managed HIV/TB patients and contributed to community ART outreach services.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Implemented patient data collection and reporting processes in line with national guidelines.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Strengthened clinical and data-driven approaches in patient management.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/olist.html">OLIST E-STORE <br />ANALYSIS</a></h2>
-									</header>
-									<a href="pages/olist.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/olist-fachada-scaled.jpg" alt="Olist E-Store Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Power BI</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/olist.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!-- Education Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <div class="card">
+                                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                                    <div>
+                                        <h3 style="display: flex; align-items: center; gap: 0.5rem; color: var(--foreground); margin-bottom: 0.25rem;">
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                                                <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                                            </svg>
+                                            Doctor of Medicine (MBBS)
+                                        </h3>
+                                        <div style="font-weight: 500; color: var(--primary);">
+                                            University of Nigeria
+                                        </div>
+                                    </div>
+                                    <div style="text-align: right;">
+                                        <span class="badge">📅 2011 - 2017</span>
+                                        <div style="font-size: 0.875rem; color: var(--muted-foreground);">Nsukka, Nigeria</div>
+                                    </div>
+                                </div>
+                                
+                                <p style="margin-bottom: 1rem; color: var(--foreground);">
+                                    Comprehensive medical training with rotations across internal medicine, pediatrics, surgery, and public health.
+                                </p>
+                                
+                                <div>
+                                    <div style="font-weight: 500; color: var(--primary); margin-bottom: 0.5rem;">Key Achievements:</div>
+                                    <ul style="list-style: none; padding: 0;">
+                                        <li style="display: flex; align-items: flex-start; margin-bottom: 0.25rem;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Graduated with strong academic and clinical performance.</span>
+                                        </li>
+                                        <li style="display: flex; align-items: flex-start;">
+                                            <div style="width: 0.375rem; height: 0.375rem; background: var(--primary); border-radius: 50%; margin-top: 0.5rem; margin-right: 0.75rem; flex-shrink: 0;"></div>
+                                            <span class="text-muted-foreground">Actively participated in community health programs.</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <div style="max-width: 64rem; margin: 0 auto;">
+                <h2 class="text-center mb-16 text-foreground">Get In Touch</h2>
+                
+                <div class="text-center mb-16" style="max-width: 32rem; margin-left: auto; margin-right: auto;">
+                    <p class="text-muted-foreground">
+                        I'm always interested in hearing about new opportunities, collaborations, 
+                        or just having a chat about data science and machine learning. 
+                        Feel free to reach out!
+                    </p>
+                </div>
+                
+                <div class="grid-2">
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Contact Information</h3>
+                        
+                        <div class="space-y-4 mb-8">
+                            <div class="card">
+                                <div class="flex items-center p-4">
+                                    <div style="margin-right: 1rem; padding: 0.75rem; background: rgba(0, 212, 255, 0.1); border-radius: var(--radius);">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                            <polyline points="22,6 12,13 2,6"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 500; color: var(--foreground);">Email</div>
+                                        <a href="mailto:drikennaugwu@gmail.com" class="text-muted-foreground hover:text-primary transition-colors">
+                                            drikennaugwu@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="flex items-center p-4">
+                                    <div style="margin-right: 1rem; padding: 0.75rem; background: rgba(0, 212, 255, 0.1); border-radius: var(--radius);">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 500; color: var(--foreground);">Phone</div>
+                                        <a href="tel:+15551234567" class="text-muted-foreground hover:text-primary transition-colors">
+                                            +234 706 497-6568
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card">
+                                <div class="flex items-center p-4">
+                                    <div style="margin-right: 1rem; padding: 0.75rem; background: rgba(0, 212, 255, 0.1); border-radius: var(--radius);">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="color: var(--primary);">
+                                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                            <circle cx="12" cy="10" r="3"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <div style="font-weight: 500; color: var(--foreground);">Location</div>
+                                        <div class="text-muted-foreground">Lagos, NG</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <h4 style="color: var(--primary); margin-bottom: 1rem;">Office Hours</h4>
+                            <div class="space-y-2">
+                                <div class="flex justify-between">
+                                    <span class="text-foreground">Monday - Friday</span>
+                                    <span class="text-muted-foreground">9:00 AM - 6:00 PM</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-foreground">Response Time</span>
+                                    <span class="text-muted-foreground">Within 24 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div>
+                        <div class="card">
+                            <h3 style="color: var(--primary); margin-bottom: 1rem;">Send a Message</h3>
+                            <form id="contactForm" class="space-y-4">
+                                <div class="form-grid">
+                                    <div>
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Your Name"
+                                            required
+                                            class="input"
+                                        />
+                                    </div>
+                                    <div>
+                                        <!-- Removed email input -->
+                                    </div>
+                                </div>
+                                
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                    required
+                                    class="input"
+                                />
+                                
+                                <textarea
+                                    name="message"
+                                    placeholder="Your Message.Please add your e-mail for a followup mail"
+                                    rows="5"
+                                    required
+                                    class="textarea"
+                                ></textarea>
+                                
+                                <button type="submit" class="btn btn-primary w-full">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-right: 0.5rem;">
+                                        <line x1="22" y1="2" x2="11" y2="13"/>
+                                        <polygon points="22,2 15,22 11,13 2,9 22,2"/>
+                                    </svg>
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="https://github.com/Ikay47/Citibike-analysis-with-R/blob/main/Cyclistic%20report.Rmd" target="_blank" rel="noopener noreferrer">CITI BIKE RIDE <br />ANALYSIS</a></h2>
-									</header>
-									<a href="https://github.com/Ikay47/Citibike-analysis-with-R/blob/main/Cyclistic%20report.Rmd" target="_blank" rel="noopener noreferrer" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/citibike.jpeg" alt="Citi Bike Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200"><span class="icon brands fa-r-project"></span> R</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="https://github.com/Ikay47/Citibike-analysis-with-R/blob/main/Cyclistic%20report.Rmd" target="_blank" rel="noopener noreferrer" class="button">View project</a></li>
-									</ul>
-								</article>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div style="max-width: 72rem; margin: 0 auto;">
+                <div class="footer-grid mb-8">
+                    <!-- Brand -->
+                    <div>
+                        <h3 style="font-weight: 600; margin-bottom: 1rem; color: var(--primary);">Dr. Ikenna Theodore Ugwu</h3>
+                        <p class="text-muted-foreground mb-4">
+                            Healthcare Data Scientist passionate about transforming data into actionable insights 
+                            and building innovative machine learning solutions.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ikenna-ugwu-716b9b18b/" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:drikennaugwu@gmail.com" class="text-muted-foreground hover:text-primary transition-colors">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 12.713l11.985-9.713h-23.97l11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/cholera.html">CHOLERA DEATHS <br/>IN SWEDEN</a></h2>
-									</header>
-									<a href="pages/cholera.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/cholerapics.jpg" alt="Cholera Deaths Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Google Sheets, Tableau</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/cholera.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!-- Quick Links -->
+                    <div>
+                        <h4 style="font-weight: 500; margin-bottom: 1rem; color: var(--primary);">Quick Links</h4>
+                        <div class="space-y-2">
+                            <a href="#about" class="block text-muted-foreground hover:text-primary transition-colors">About</a>
+                            <a href="#skills" class="block text-muted-foreground hover:text-primary transition-colors">Skills</a>
+                            <a href="#projects" class="block text-muted-foreground hover:text-primary transition-colors">Projects</a>
+                            <a href="#experience" class="block text-muted-foreground hover:text-primary transition-colors">Experience</a>
+                            <a href="#contact" class="block text-muted-foreground hover:text-primary transition-colors">Contact</a>
+                        </div>
+                    </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/mexican.html">MEXICAN RESTAURANTS <br>ANALYSIS</a></h2>
-									</header>
-									<a href="pages/mexican.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/Mexicanos.jpg" alt="Mexican Restaurants Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Tableau</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/mexican.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                    <!-- Contact Info -->
+                    <div>
+                        <h4 style="font-weight: 500; margin-bottom: 1rem; color: var(--primary);">Contact</h4>
+                        <div class="space-y-2 text-muted-foreground">
+                            <p>drikennaugwu@gmail.com</p>
+                            <p>Lagos, NG</p>
+                        </div>
+                    </div>
+                </div>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="pages/BTC.html">BITCOIN TRADE <br> ANALYSIS</a></h2>
-									</header>
-									<a href="pages/BTC.html" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/bitcoin.jpg" alt="Bitcoin Trade Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Tableau</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="pages/BTC.html" class="button">View project</a></li>
-									</ul>
-								</article>
+                <!-- Bottom Bar -->
+                <div class="footer-bottom">
+                    <p class="text-muted-foreground" style="font-size: 0.875rem;">
+                        © 2025 Dr. Ikenna Theodore Ugwu. All rights reserved.
+                    </p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="https://github.com/Ikay47/Opensponsorship_Analysis/blob/main/sample_brands.ipynb" target="_blank" rel="noopener noreferrer">OPENSPONSORSHIP <br>(SPORT ADVERTISEMENT) ANALYSIS</a></h2>
-									</header>
-									<a href="https://github.com/Ikay47/Opensponsorship_Analysis/blob/main/sample_brands.ipynb" target="_blank" rel="noopener noreferrer" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/opensponsorship.jpg" alt="Opensponsorship Analysis" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Jupyter Notebook, Python</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="https://github.com/Ikay47/Opensponsorship_Analysis/blob/main/sample_brands.ipynb" target="_blank" rel="noopener noreferrer" class="button">View project</a></li>
-									</ul>
-								</article>
+   
+</body>
+<script>
+    (function() {
+        // Initialize EmailJS with your User ID
+        emailjs.init('Ikenna'); // Replace with your EmailJS User ID
 
-								<article data-aos="fade-up">
-									<header>
-										<h2><a href="https://docs.google.com/spreadsheets/d/1Dxq0C9Lm2nZ7UjTalOLkkXmiWGnUsN3VUmNh9wZm0fE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">SALES DASHBOARD</a></h2>
-									</header>
-									<a href="https://docs.google.com/spreadsheets/d/1Dxq0C9Lm2nZ7UjTalOLkkXmiWGnUsN3VUmNh9wZm0fE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="image fit" data-aos="zoom-in" data-aos-delay="100"><img src="images/sales.png" alt="Sales Dashboard" /></a>
-									<p class="logoa" data-aos="fade-left" data-aos-delay="200">Microsoft Excel</p>
-									<ul class="actions special" data-aos="fade-up" data-aos-delay="300">
-										<li><a href="https://docs.google.com/spreadsheets/d/1Dxq0C9Lm2nZ7UjTalOLkkXmiWGnUsN3VUmNh9wZm0fE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="button">View project</a></li>
-									</ul>
-								</article>
-								
-							</section>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
 
-						<!-- Footer for Pagination (Kept commented as per original)
-							<footer>
-								<div class="pagination">
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">…</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer>-->
-					</div>
+            const form = event.target;
+            const name = form.querySelector('input[name="name"]').value;
+            const subject = form.querySelector('input[name="subject"]').value;
+            const message = form.querySelector('textarea[name="message"]').value;
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section class="split contact">
-							<section data-aos="fade-right">
-								<h3>Email</h3>
-								<p><a href="mailto:Ikay.teddy@gmail.com">Ikay.teddy@gmail.com</a></p>
-							</section>
-							<section data-aos="fade-left">
-								<h3>Social</h3>
-								<ul class="icons alt">
-									<li><a href="https://www.linkedin.com/in/ikenna-ugwu-716b9b18b/" class="icon brands alt fa-linkedin" target="_blank" rel="noopener noreferrer"><span class="label">linkedin</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
-
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>© Theodore Ugwu</li><li>Design: <a href="https://html5up.net" target="_blank" rel="noopener noreferrer">HTML5 UP</a></li><li>Customized Version</li></ul>
-					</div>
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-			<!-- Particles.js via CDN -->
-			<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-			<!-- Typed.js via CDN -->
-			<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-			<!-- AOS.js via CDN -->
-			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-			
-			<!-- Custom Cursor Script -->
-			<script src="assets/js/custom-cursor.js"></script>
-
-			<script>
-				// AOS Initialization
-				AOS.init({
-					duration: 800,
-					once: true,
-					offset: 50, // Offset (in px) from the original trigger point
-				});
-
-				// Typed.js Initialization
-				if (document.getElementById('typed-output')) {
-					var typed = new Typed('#typed-output', {
-						strings: [
-							"Data analyst skilled in SQL, Excel, Power BI, Tableau, Python, R.",
-							"Transforming data into actionable insights.",
-							"Let's build something impactful together."
-						],
-						typeSpeed: 50,
-						backSpeed: 25,
-						backDelay: 2000,
-						startDelay: 500,
-						loop: true,
-						smartBackspace: true,
-						showCursor: true,
-            			cursorChar: '_',
-					});
-				}
-
-				// Particles.js Initialization
-				if (document.getElementById('intro')) {
-					particlesJS("intro", {
-						"particles": {
-							"number": {
-								"value": 60, // Reduced for subtlety
-								"density": {
-									"enable": true,
-									"value_area": 800
-								}
-							},
-							"color": {
-								"value": "#00f2ff" // Accent color
-							},
-							"shape": {
-								"type": "circle",
-							},
-							"opacity": {
-								"value": 0.2, // More subtle
-								"random": true,
-							},
-							"size": {
-								"value": 2, // Smaller particles
-								"random": true,
-							},
-							"line_linked": {
-								"enable": true,
-								"distance": 120,
-								"color": "#00f2ff",
-								"opacity": 0.15, // More subtle
-								"width": 1
-							},
-							"move": {
-								"enable": true,
-								"speed": 1.5, // Slower speed
-								"direction": "none",
-								"random": true,
-								"straight": false,
-								"out_mode": "out",
-								"bounce": false,
-							}
-						},
-						"interactivity": {
-							"detect_on": "canvas",
-							"events": {
-								"onhover": {
-									"enable": true,
-									"mode": "grab" // Changed to grab for a less aggressive effect
-								},
-								"onclick": {
-									"enable": true,
-									"mode": "push"
-								},
-								"resize": true
-							},
-							"modes": {
-								"grab": {
-									"distance": 100,
-									"line_opacity": 0.3
-								},
-								"push": {
-									"particles_nb": 3
-								}
-							}
-						},
-						"retina_detect": true
-					});
-				}
-			</script>
-	</body>
+            // Send email using EmailJS
+            emailjs.send('service_ilow57p', 'Ytemplate_jy37wcw', {
+                name: name,
+                subject: subject,
+                message: message,
+                to_email: 'drikennaugwu@gmail.com' // Fixed recipient email
+            }).then(function(response) {
+                alert('Message sent successfully!');
+                form.reset(); // Clear the form
+            }, function(error) {
+                alert('Failed to send message. Please try again.');
+                console.error('Error:', error);
+            });
+        });
+    })();
+</script>
 </html>
