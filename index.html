@@ -11,6 +11,8 @@
         <!-- Scripts -->
         <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
         <script src="js/main.js" defer></script>
+        <script src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+
       </head>
 <body>
     <!-- Background Pattern -->
@@ -55,7 +57,7 @@
         <nav class="nav">
             <div class="container flex items-center justify-between">
                 <div class="nav-brand">
-                    Dr. Ikenna Theodore Ugwu
+                  <h3>Dr. Ikenna Theodore Ugwu</h3>  
                 </div>
                 
                 <!-- Desktop Navigation -->
@@ -110,7 +112,7 @@
                 
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
-                    <a href="#" class="btn btn-outline btn-lg">View CV</a>
+                    <a href="https://docs.google.com/document/d/1g99WOpwWMx1xdDyh3uxEHpiUS2L34vbK/edit?usp=sharing&ouid=108986287874923917647&rtpof=true&sd=true" class="btn btn-outline btn-lg">View CV</a>
                 </div>
                 
                 <div class="social-links">
@@ -216,219 +218,121 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <div style="max-width: 72rem; margin: 0 auto;">
-                <h2 class="text-center mb-16 text-foreground">Skills & Expertise</h2>
-                
-                <div class="grid-3 mb-16">
-                    <!-- Programming Languages -->
-                    <div class="card">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Programming Languages</h3>
-                        <div class="space-y-4">
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Python</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="95"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">R</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">SQL</span>
-                                    <span class="skill-percentage">88%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="88"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Java</span>
-                                    <span class="skill-percentage">75%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="75"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">JavaScript</span>
-                                    <span class="skill-percentage">70%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="70"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Machine Learning & AI -->
-                    <div class="card">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Machine Learning & AI</h3>
-                        <div class="space-y-4">
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Scikit-learn</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="95"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">TensorFlow</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">PyTorch</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="85"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">XGBoost</span>
-                                    <span class="skill-percentage">92%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="92"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Deep Learning</span>
-                                    <span class="skill-percentage">88%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="88"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Data Tools & Platforms -->
-                    <div class="card">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Data Tools & Platforms</h3>
-                        <div class="space-y-4">
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Pandas</span>
-                                    <span class="skill-percentage">95%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="95"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">NumPy</span>
-                                    <span class="skill-percentage">93%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="93"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Power BI</span>
-                                    <span class="skill-percentage">90%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="90"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Tableau</span>
-                                    <span class="skill-percentage">88%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="88"></div>
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-header">
-                                    <span class="skill-name">Docker</span>
-                                    <span class="skill-percentage">85%</span>
-                                </div>
-                                <div class="progress-bar">
-                                    <div class="progress-fill" data-width="85"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="grid-2">
-                    <!-- Certifications -->
-                    <div class="card">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Certifications</h3>
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
-                                <span class="text-foreground">DataCamp Certification in Data Science</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
-                                <span class="text-foreground">Google Data Analytics Professional Certificate</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
-                                <span class="text-foreground">Bloomberg Certification in Financial Fundamentals</span>
-                            </div>
-                            <div class="flex items-center">
-                                <div style="width: 0.5rem; height: 0.5rem; background: var(--primary); border-radius: 50%; margin-right: 0.75rem;"></div>
-                                <span class="text-foreground">Diploma in Project Management (Alison)</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tools & Technologies -->
-                    <div class="card">
-                        <h3 style="margin-bottom: 1rem; color: var(--primary);">Tools & Technologies</h3>
-                        <div style="display: flex; flex-wrap: wrap; gap: 0.5rem;">
-                            <span class="badge">Jupyter</span>
-                            <span class="badge">Git</span>
-                            <span class="badge">SPSS</span>
-                            <span class="badge">PyCharm</span>
-                            <span class="badge">Tableau</span>
-                            <span class="badge">Power BI</span>
-                            <span class="badge">Android Studio</span>
-                            <span class="badge">PostgreSQL</span>
-                            <span class="badge">VS Code</span>
-                            <span class="badge">MLflow</span>
-                            <span class="badge">Apache Airflow</span>
-                            <span class="badge">Excel (Advanced)</span>
-                            <span class="badge">KoboToolbox</span>
-                            <span class="badge">ODK</span>
-                            <span class="badge">EMR Systems</span>
-                        </div>
-                    </div>
-                </div>
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <div class="container">
+      <div style="max-width: 72rem; margin: 0 auto;">
+        <h2 class="text-center mb-16 text-foreground">Skills & Expertise</h2>
+  
+        <div class="grid-3 mb-16">
+          <!-- Programming Languages -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Programming Languages</h3>
+            <div class="space-y-4">
+              <div class="skill-item"><span class="skill-name">Python</span></div>
+              <div class="skill-item"><span class="skill-name">R</span></div>
+              <div class="skill-item"><span class="skill-name">SQL</span></div>
+              <div class="skill-item"><span class="skill-name">Java</span></div>
+              <div class="skill-item"><span class="skill-name">JavaScript</span></div>
             </div>
+          </div>
+  
+          <!-- Machine Learning & AI -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Machine Learning & AI</h3>
+            <div class="space-y-4">
+              <div class="skill-item"><span class="skill-name">Scikit-learn</span></div>
+              <div class="skill-item"><span class="skill-name">TensorFlow</span></div>
+              <div class="skill-item"><span class="skill-name">PyTorch</span></div>
+              <div class="skill-item"><span class="skill-name">XGBoost</span></div>
+              <div class="skill-item"><span class="skill-name">Deep Learning</span></div>
+              <div class="skill-item"><span class="skill-name">Predictive Modeling</span></div>
+              <div class="skill-item"><span class="skill-name">Generative AI</span></div>
+            </div>
+          </div>
+  
+          <!-- Data Tools & Platforms -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Data Tools & Platforms</h3>
+            <div class="space-y-4">
+              <div class="skill-item"><span class="skill-name">Pandas</span></div>
+              <div class="skill-item"><span class="skill-name">NumPy</span></div>
+              <div class="skill-item"><span class="skill-name">Power BI</span></div>
+              <div class="skill-item"><span class="skill-name">Tableau</span></div>
+              <div class="skill-item"><span class="skill-name">Docker</span></div>
+              <div class="skill-item"><span class="skill-name">SPSS</span></div>
+              <div class="skill-item"><span class="skill-name">Stata</span></div>
+              <div class="skill-item"><span class="skill-name">EPI-Info</span></div>
+            </div>
+          </div>
         </div>
-    </section>
+  
+        <div class="grid-2">
+          <!-- Web & Mobile Development -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Web & Mobile Development</h3>
+            <div class="space-y-4">
+              <div class="skill-item"><span class="skill-name">HTML, CSS, JavaScript</span></div>
+              <div class="skill-item"><span class="skill-name">Flutter Mobile App Development</span></div>
+              <div class="skill-item"><span class="skill-name">Android Studio</span></div>
+              <div class="skill-item"><span class="skill-name">React (beginner–intermediate)</span></div>
+            </div>
+          </div>
+  
+          <!-- Advanced Tools & Healthcare Systems -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Advanced Tools & Healthcare Systems</h3>
+            <div class="space-y-4">
+              <div class="skill-item"><span class="skill-name">Advanced Excel & Google Sheets Automation</span></div>
+              <div class="skill-item"><span class="skill-name">KoboToolbox / KoboCollect</span></div>
+              <div class="skill-item"><span class="skill-name">ODK</span></div>
+              <div class="skill-item"><span class="skill-name">DHIS2</span></div>
+              <div class="skill-item"><span class="skill-name">NMRS & NDR</span></div>
+              <div class="skill-item"><span class="skill-name">EMR Systems</span></div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="grid-2" style="margin-top: 2rem;">
+          <!-- Soft Skills -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Soft Skills</h3>
+            <div class="space-y-4">
+              <div class="skill-item"><span class="skill-name">Leadership & Mentorship</span></div>
+              <div class="skill-item"><span class="skill-name">Team Management</span></div>
+              <div class="skill-item"><span class="skill-name">Communication & Collaboration</span></div>
+              <div class="skill-item"><span class="skill-name">Problem-Solving</span></div>
+              <div class="skill-item"><span class="skill-name">Process Improvement</span></div>
+            </div>
+          </div>
+  
+          <!-- Certifications -->
+          <div class="card">
+            <h3 style="margin-bottom: 1rem; color: var(--primary);">Certifications</h3>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <span class="text-foreground">Google Data Analytics Certificate (Coursera)</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-foreground">Machine Learning A–Z (Udemy)</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-foreground">Python Bootcamp: Zero to Hero (Udemy)</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-foreground">Mathematics for ML & Data Science (Coursera)</span>
+              </div>
+              <div class="flex items-center">
+                <span class="text-foreground">HIV Clinical Mentorship Training (US CDC)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
 
     <!-- Projects Section -->
     <section id="projects" class="section section-alt">
@@ -461,16 +365,16 @@
                     <!-- Project 3 -->
                     <div class="card">
                         <img
-                            src="https://images.unsplash.com/photo-1618044733300-9472054094ee?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGFuYWx5dGljcyUyMHJlcG9ydHN8ZW58MXx8fHwxNzU3NDI1MjY2fDA&ixlib=rb-4.1.0&q=80&w=1080"
-                            alt="Predicting Osteoporosis"
+                            src="./images/data_quiz.jpg"
+                            alt="DATA ANALYSIS / SCIENCE QUIZ"
                             class="project-image"
                         />
-                        <h3 style="color: var(--primary); margin-bottom: 1rem;">PREDICTING OSTEOPOROSIS (BONE DEGENERATION)</h3>
+                        <h3 style="color: var(--primary); margin-bottom: 1rem;">DATA ANALYSIS / SCIENCE QUIZ</h3>
                         <div class="project-tags">
-                            <span class="badge">Machine learning</span>
-                            <span class="badge">Python</span>
+                            <span class="badge">Web Development</span>
+                            <span class="badge">github</span>
                         </div>
-                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">
+                        <a href="https://ikay47.github.io/data_analysis_quiz/" target="_blank" rel="noopener noreferrer" class="btn btn-outline w-full">
                             VIEW PROJECT
                         </a>
                     </div>
@@ -786,7 +690,7 @@
                                     </div>
                                     <div>
                                         <div style="font-weight: 500; color: var(--foreground);">Phone</div>
-                                        <a href="tel:+15551234567" class="text-muted-foreground hover:text-primary transition-colors">
+                                        <a href="tel:+2347064976568" class="text-muted-foreground hover:text-primary transition-colors">
                                             +234 706 497-6568
                                         </a>
                                     </div>
@@ -830,44 +734,48 @@
                             <h3 style="color: var(--primary); margin-bottom: 1rem;">Send a Message</h3>
                             <form id="contactForm" class="space-y-4">
                                 <div class="form-grid">
-                                    <div>
-                                        <input
-                                            type="text"
-                                            name="name"
-                                            placeholder="Your Name"
-                                            required
-                                            class="input"
-                                        />
-                                    </div>
-                                    <div>
-                                        <!-- Removed email input -->
-                                    </div>
+                                  <div>
+                                    <input 
+                                      type="text" 
+                                      name="name" 
+                                      placeholder="Your Name" 
+                                      required 
+                                      class="input" 
+                                    />
+                                  </div>
+                                  <div>
+                                    <input 
+                                      type="email" 
+                                      name="email" 
+                                      placeholder="Your Email" 
+                                      required 
+                                      class="input" 
+                                    />
+                                  </div>
                                 </div>
-                                
-                                <input
-                                    type="text"
-                                    name="subject"
-                                    placeholder="Subject"
-                                    required
-                                    class="input"
+                              
+                                <input 
+                                  type="text" 
+                                  name="title" 
+                                  placeholder="Subject" 
+                                  required 
+                                  class="input" 
                                 />
-                                
-                                <textarea
-                                    name="message"
-                                    placeholder="Your Message.Please add your e-mail for a followup mail"
-                                    rows="5"
-                                    required
-                                    class="textarea"
+                              
+                                <textarea 
+                                  name="message" 
+                                  placeholder="Your Message" 
+                                  rows="5" 
+                                  required 
+                                  class="textarea"
                                 ></textarea>
-                                
+                              
                                 <button type="submit" class="btn btn-primary w-full">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-right: 0.5rem;">
-                                        <line x1="22" y1="2" x2="11" y2="13"/>
-                                        <polygon points="22,2 15,22 11,13 2,9 22,2"/>
-                                    </svg>
-                                    Send Message
+                                  Send Message
                                 </button>
-                            </form>
+                              </form>
+                              
+                              
                         </div>
                     </div>
                 </div>
@@ -888,7 +796,7 @@
                             and building innovative machine learning solutions.
                         </p>
                         <div class="flex space-x-4">
-                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
+                            <a href="https://github.com/ikay47" target="_blank" rel="noopener noreferrer" class="text-muted-foreground hover:text-primary transition-colors">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
                                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                 </svg>
@@ -946,36 +854,32 @@
             </div>
         </div>
     </footer>
+<!-- EmailJS SDK -->
+
+<script>
+    (function () {
+      // Replace with your actual Public Key (from EmailJS Dashboard → Account → API Keys)
+      emailjs.init("ARv-lucxMIqB38AYeapHd");
+    
+      const form = document.getElementById("contactForm");
+    
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    
+        emailjs.sendForm("service_ilow57p", "template_jy37wcw", form)
+          .then(function () {
+            alert("Message sent successfully!");
+            form.reset();
+          })
+          .catch(function (error) {
+            alert("Failed to send message. Check console.");
+            console.error("EmailJS error:", error);
+          });
+      });
+    })();
+    </script>
 
    
 </body>
-<script>
-    (function() {
-        // Initialize EmailJS with your User ID
-        emailjs.init('Ikenna'); // Replace with your EmailJS User ID
 
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent default form submission
-
-            const form = event.target;
-            const name = form.querySelector('input[name="name"]').value;
-            const subject = form.querySelector('input[name="subject"]').value;
-            const message = form.querySelector('textarea[name="message"]').value;
-
-            // Send email using EmailJS
-            emailjs.send('service_ilow57p', 'Ytemplate_jy37wcw', {
-                name: name,
-                subject: subject,
-                message: message,
-                to_email: 'drikennaugwu@gmail.com' // Fixed recipient email
-            }).then(function(response) {
-                alert('Message sent successfully!');
-                form.reset(); // Clear the form
-            }, function(error) {
-                alert('Failed to send message. Please try again.');
-                console.error('Error:', error);
-            });
-        });
-    })();
-</script>
 </html>
